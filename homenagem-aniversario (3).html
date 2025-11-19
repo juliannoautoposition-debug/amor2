@@ -1,0 +1,433 @@
+<html lang="pt-BR"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Feliz Aniversário ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#4b1d63; /* roxo profundo */
+      --bg2:#a54edb; /* lilás/roxo claro */
+      --accent:#ffffff;
+      --card:#ffffff1a;
+      --glass: rgba(255,255,255,0.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Montserrat,system-ui,Arial,Helvetica,sans-serif;color:var(--accent);background:linear-gradient(135deg,var(--bg1) 0%, #5f1c80 40%, var(--bg2) 100%);-webkit-font-smoothing:antialiased}
+
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+    .card{width:100%;max-width:980px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));border-radius:20px;padding:26px;box-shadow:0 10px 30px rgba(2,6,23,0.6);position:relative;overflow:hidden;border:1px solid rgba(255,255,255,0.06)}
+
+    /* left photo */
+    .grid{display:grid;grid-template-columns:380px 1fr;gap:24px;align-items:center}
+    .photo{height:420px;border-radius:16px;overflow:hidden;position:relative;background:linear-gradient(135deg,#2e0f3a,#4b1d63);display:flex;align-items:center;justify-content:center}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* overlay play heart */
+    .heart{position:absolute;left:18px;bottom:18px;background:linear-gradient(90deg,#ff7ab6,#ffb86b);padding:10px;border-radius:999px;display:flex;gap:10px;align-items:center;backdrop-filter:blur(6px);box-shadow:0 6px 18px rgba(0,0,0,0.35)}
+    .heart b{font-weight:700}
+
+    /* content */
+    .content{padding:18px}
+    .title{font-family:'Great Vibes',cursive;font-size:48px;margin:0 0 6px;line-height:0.95}
+    .subtitle{margin:0 0 18px;font-weight:600;opacity:0.95}
+
+    .message{background:var(--card);padding:18px;border-radius:12px;color:var(--accent);min-height:160px}
+    .message [contenteditable]{outline:none;border:none;background:transparent;color:inherit;font-size:16px}
+
+    .controls{display:flex;gap:12px;align-items:center;margin-top:14px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.12);padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:700}
+
+    /* floating hearts animation */
+    .floaters{position:absolute;inset:0;pointer-events:none}
+    .floater{position:absolute;opacity:0.85;animation:floatUp linear infinite}
+    @keyframes floatUp{from{transform:translateY(20vh) scale(0.6);opacity:0} to{transform:translateY(-30vh) scale(1);opacity:1}}
+
+    /* confetti */
+    #confetti{position:absolute;inset:0;pointer-events:none}
+
+    /* responsive */
+    @media(max-width:880px){
+      .grid{grid-template-columns:1fr;}
+      .photo{height:280px}
+      .title{font-size:36px}
+    }
+
+    /* small helpers */
+    .small{font-size:13px;opacity:0.9}
+  </style>
+</head>
+<body>
+  <audio src="URL-DA-SUA-MUSICA.mp3" autoplay="" loop="" style="display:none;"></audio>
+  <div class="wrap">
+    <div class="card">
+
+      <div class="floaters" id="floaters"><div class="floater" style="width: 30.4547px; height: 30.4547px; left: 3.0254%; bottom: -10%; opacity: 0.750052; animation-duration: 8.13467s; background: none;">
+        <svg width="30.45465441545454" height="30.45465441545454" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 22.9208px; height: 22.9208px; left: 44.5349%; bottom: -10%; opacity: 0.568371; animation-duration: 8.27233s; background: none;">
+        <svg width="22.920789990584037" height="22.920789990584037" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 25.658px; height: 25.658px; left: 44.1203%; bottom: -10%; opacity: 0.74499; animation-duration: 8.72224s; background: none;">
+        <svg width="25.65795174645256" height="25.65795174645256" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 29.3264px; height: 29.3264px; left: 90.1342%; bottom: -10%; opacity: 0.885749; animation-duration: 9.34248s; background: none;">
+        <svg width="29.32635749400666" height="29.32635749400666" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 34.2708px; height: 34.2708px; left: 49.6646%; bottom: -10%; opacity: 0.578277; animation-duration: 8.5606s; background: none;">
+        <svg width="34.27082543500383" height="34.27082543500383" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 48.8066px; height: 48.8066px; left: 49.694%; bottom: -10%; opacity: 0.898323; animation-duration: 6.28713s; background: none;">
+        <svg width="48.8066021134203" height="48.8066021134203" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 50.7004px; height: 50.7004px; left: 10.4824%; bottom: -10%; opacity: 0.420934; animation-duration: 10.8022s; background: none;">
+        <svg width="50.70038097453236" height="50.70038097453236" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 34.0454px; height: 34.0454px; left: 31.8972%; bottom: -10%; opacity: 0.61782; animation-duration: 7.30485s; background: none;">
+        <svg width="34.04537245074693" height="34.04537245074693" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 43.82px; height: 43.82px; left: 80.358%; bottom: -10%; opacity: 0.831563; animation-duration: 9.55929s; background: none;">
+        <svg width="43.81996529890051" height="43.81996529890051" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 46.353px; height: 46.353px; left: 31.5708%; bottom: -10%; opacity: 0.594239; animation-duration: 7.10369s; background: none;">
+        <svg width="46.35296206971433" height="46.35296206971433" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 48.2558px; height: 48.2558px; left: 39.412%; bottom: -10%; opacity: 0.773123; animation-duration: 10.5249s; background: none;">
+        <svg width="48.255827952193755" height="48.255827952193755" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 51.7921px; height: 51.7921px; left: 60.3983%; bottom: -10%; opacity: 0.866576; animation-duration: 10.0933s; background: none;">
+        <svg width="51.792071734012204" height="51.792071734012204" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 34.2837px; height: 34.2837px; left: 29.072%; bottom: -10%; opacity: 0.725922; animation-duration: 8.4374s; background: none;">
+        <svg width="34.2836619764211" height="34.2836619764211" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 29.6587px; height: 29.6587px; left: 34.2369%; bottom: -10%; opacity: 0.409363; animation-duration: 6.50752s; background: none;">
+        <svg width="29.658729819922257" height="29.658729819922257" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 27.9043px; height: 27.9043px; left: 32.0782%; bottom: -10%; opacity: 0.946405; animation-duration: 10.9405s; background: none;">
+        <svg width="27.90428341312482" height="27.90428341312482" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 25.0041px; height: 25.0041px; left: 1.48082%; bottom: -10%; opacity: 0.318242; animation-duration: 8.35832s; background: none;">
+        <svg width="25.004085162887193" height="25.004085162887193" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 38.347px; height: 38.347px; left: 33.1928%; bottom: -10%; opacity: 0.710436; animation-duration: 10.4125s; background: none;">
+        <svg width="38.34701690710024" height="38.34701690710024" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 47.2676px; height: 47.2676px; left: 15.8352%; bottom: -10%; opacity: 0.452232; animation-duration: 6.0109s; background: none;">
+        <svg width="47.2676412019607" height="47.2676412019607" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 44.5981px; height: 44.5981px; left: 11.4939%; bottom: -10%; opacity: 0.439102; animation-duration: 5.10693s; background: none;">
+        <svg width="44.598111781567226" height="44.598111781567226" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 38.159px; height: 38.159px; left: 39.8398%; bottom: -10%; opacity: 0.696794; animation-duration: 6.80958s; background: none;">
+        <svg width="38.159004501340604" height="38.159004501340604" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 34.5335px; height: 34.5335px; left: 66.305%; bottom: -10%; opacity: 0.857678; animation-duration: 10.603s; background: none;">
+        <svg width="34.533548098017775" height="34.533548098017775" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 29.3364px; height: 29.3364px; left: 70.697%; bottom: -10%; opacity: 0.312148; animation-duration: 8.9448s; background: none;">
+        <svg width="29.336360865009464" height="29.336360865009464" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 34.6667px; height: 34.6667px; left: 17.5668%; bottom: -10%; opacity: 0.382762; animation-duration: 10.0727s; background: none;">
+        <svg width="34.666661401237945" height="34.666661401237945" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 49.6787px; height: 49.6787px; left: 31.7002%; bottom: -10%; opacity: 0.583058; animation-duration: 10.6966s; background: none;">
+        <svg width="49.67868408848744" height="49.67868408848744" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 40.2401px; height: 40.2401px; left: 88.294%; bottom: -10%; opacity: 0.592343; animation-duration: 10.9096s; background: none;">
+        <svg width="40.240092151089684" height="40.240092151089684" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 37.607px; height: 37.607px; left: 3.78433%; bottom: -10%; opacity: 0.74353; animation-duration: 5.97475s; background: none;">
+        <svg width="37.60696095848984" height="37.60696095848984" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 41.2876px; height: 41.2876px; left: 36.4456%; bottom: -10%; opacity: 0.772473; animation-duration: 10.4224s; background: none;">
+        <svg width="41.28755878910843" height="41.28755878910843" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 43.413px; height: 43.413px; left: 31.5842%; bottom: -10%; opacity: 0.53075; animation-duration: 6.1201s; background: none;">
+        <svg width="43.412992677622114" height="43.412992677622114" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 43.4511px; height: 43.4511px; left: 82.4395%; bottom: -10%; opacity: 0.98829; animation-duration: 9.9771s; background: none;">
+        <svg width="43.45113693236862" height="43.45113693236862" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 51.158px; height: 51.158px; left: 72.912%; bottom: -10%; opacity: 0.358407; animation-duration: 7.04918s; background: none;">
+        <svg width="51.15804666234564" height="51.15804666234564" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 27.1835px; height: 27.1835px; left: 82.9626%; bottom: -10%; opacity: 0.340451; animation-duration: 8.02832s; background: none;">
+        <svg width="27.183542303143515" height="27.183542303143515" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 28.4394px; height: 28.4394px; left: 48.6262%; bottom: -10%; opacity: 0.675143; animation-duration: 7.12002s; background: none;">
+        <svg width="28.43937946110744" height="28.43937946110744" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 24.9984px; height: 24.9984px; left: 12.4956%; bottom: -10%; opacity: 0.327948; animation-duration: 5.04758s; background: none;">
+        <svg width="24.99844722541269" height="24.99844722541269" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 30.0728px; height: 30.0728px; left: 79.1311%; bottom: -10%; opacity: 0.975232; animation-duration: 9.15841s; background: none;">
+        <svg width="30.072841196310733" height="30.072841196310733" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 44.0882px; height: 44.0882px; left: 52.4496%; bottom: -10%; opacity: 0.655103; animation-duration: 8.33176s; background: none;">
+        <svg width="44.08815266148147" height="44.08815266148147" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 24.419px; height: 24.419px; left: 49.4647%; bottom: -10%; opacity: 0.532789; animation-duration: 6.09369s; background: none;">
+        <svg width="24.419022818495506" height="24.419022818495506" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 44.9411px; height: 44.9411px; left: 89.2334%; bottom: -10%; opacity: 0.689868; animation-duration: 9.10829s; background: none;">
+        <svg width="44.941125579379616" height="44.941125579379616" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 22.3992px; height: 22.3992px; left: 39.0968%; bottom: -10%; opacity: 0.678419; animation-duration: 8.31928s; background: none;">
+        <svg width="22.399208962994358" height="22.399208962994358" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 34.1308px; height: 34.1308px; left: 42.5431%; bottom: -10%; opacity: 0.604281; animation-duration: 7.55065s; background: none;">
+        <svg width="34.13079606881214" height="34.13079606881214" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 28.7768px; height: 28.7768px; left: 48.5154%; bottom: -10%; opacity: 0.707027; animation-duration: 8.03536s; background: none;">
+        <svg width="28.776809420398347" height="28.776809420398347" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 28.3784px; height: 28.3784px; left: 82.6355%; bottom: -10%; opacity: 0.565647; animation-duration: 7.83671s; background: none;">
+        <svg width="28.37843292212242" height="28.37843292212242" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 28.0616px; height: 28.0616px; left: 21.6538%; bottom: -10%; opacity: 0.571071; animation-duration: 7.88409s; background: none;">
+        <svg width="28.06156123187328" height="28.06156123187328" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 40.4628px; height: 40.4628px; left: 23.3355%; bottom: -10%; opacity: 0.714642; animation-duration: 7.20629s; background: none;">
+        <svg width="40.46275474380515" height="40.46275474380515" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 53.1544px; height: 53.1544px; left: 34.4844%; bottom: -10%; opacity: 0.650529; animation-duration: 7.06733s; background: none;">
+        <svg width="53.15437364422239" height="53.15437364422239" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 36.8311px; height: 36.8311px; left: 62.1286%; bottom: -10%; opacity: 0.683492; animation-duration: 10.5442s; background: none;">
+        <svg width="36.83107052731323" height="36.83107052731323" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 37.2769px; height: 37.2769px; left: 2.44384%; bottom: -10%; opacity: 0.994118; animation-duration: 9.50022s; background: none;">
+        <svg width="37.27692716081962" height="37.27692716081962" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 34.3722px; height: 34.3722px; left: 62.1882%; bottom: -10%; opacity: 0.748932; animation-duration: 10.5597s; background: none;">
+        <svg width="34.37221440437685" height="34.37221440437685" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 23.163px; height: 23.163px; left: 35.4993%; bottom: -10%; opacity: 0.501228; animation-duration: 5.54557s; background: none;">
+        <svg width="23.163009771718592" height="23.163009771718592" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 38.5256px; height: 38.5256px; left: 15.9294%; bottom: -10%; opacity: 0.82915; animation-duration: 7.33602s; background: none;">
+        <svg width="38.52559352695592" height="38.52559352695592" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 37.2736px; height: 37.2736px; left: 25.4787%; bottom: -10%; opacity: 0.70555; animation-duration: 6.38919s; background: none;">
+        <svg width="37.27363852636486" height="37.27363852636486" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 45.841px; height: 45.841px; left: 45.6824%; bottom: -10%; opacity: 0.541481; animation-duration: 10.3996s; background: none;">
+        <svg width="45.8409989956278" height="45.8409989956278" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 28.99px; height: 28.99px; left: 42.4769%; bottom: -10%; opacity: 0.479974; animation-duration: 6.02221s; background: none;">
+        <svg width="28.989967244943127" height="28.989967244943127" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 22.7419px; height: 22.7419px; left: 31.9698%; bottom: -10%; opacity: 0.747384; animation-duration: 9.43446s; background: none;">
+        <svg width="22.741917170547907" height="22.741917170547907" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 48.8873px; height: 48.8873px; left: 86.8791%; bottom: -10%; opacity: 0.372397; animation-duration: 10.487s; background: none;">
+        <svg width="48.88731012585454" height="48.88731012585454" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 27.8496px; height: 27.8496px; left: 28.8403%; bottom: -10%; opacity: 0.449849; animation-duration: 10.4995s; background: none;">
+        <svg width="27.849596423127373" height="27.849596423127373" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 53.1855px; height: 53.1855px; left: 41.1943%; bottom: -10%; opacity: 0.336162; animation-duration: 8.19414s; background: none;">
+        <svg width="53.185457255207396" height="53.185457255207396" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 22.3695px; height: 22.3695px; left: 27.9094%; bottom: -10%; opacity: 0.537474; animation-duration: 8.22367s; background: none;">
+        <svg width="22.3694568732807" height="22.3694568732807" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 23.3505px; height: 23.3505px; left: 9.52064%; bottom: -10%; opacity: 0.429089; animation-duration: 5.26384s; background: none;">
+        <svg width="23.350525178426437" height="23.350525178426437" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 42.1549px; height: 42.1549px; left: 27.758%; bottom: -10%; opacity: 0.735708; animation-duration: 5.57163s; background: none;">
+        <svg width="42.154886675060354" height="42.154886675060354" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 39.047px; height: 39.047px; left: 75.8127%; bottom: -10%; opacity: 0.576252; animation-duration: 6.26433s; background: none;">
+        <svg width="39.04699850364031" height="39.04699850364031" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 24.9868px; height: 24.9868px; left: 44.2716%; bottom: -10%; opacity: 0.771103; animation-duration: 9.83351s; background: none;">
+        <svg width="24.98679144558947" height="24.98679144558947" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 22.7053px; height: 22.7053px; left: 25.8168%; bottom: -10%; opacity: 0.683916; animation-duration: 9.8851s; background: none;">
+        <svg width="22.705308517828076" height="22.705308517828076" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 26.9845px; height: 26.9845px; left: 18.6063%; bottom: -10%; opacity: 0.47786; animation-duration: 6.57349s; background: none;">
+        <svg width="26.984509449537114" height="26.984509449537114" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 51.9418px; height: 51.9418px; left: 59.1143%; bottom: -10%; opacity: 0.941906; animation-duration: 10.4036s; background: none;">
+        <svg width="51.94183493961018" height="51.94183493961018" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 31.7733px; height: 31.7733px; left: 54.2052%; bottom: -10%; opacity: 0.431871; animation-duration: 10.7268s; background: none;">
+        <svg width="31.77327476862032" height="31.77327476862032" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 32.2986px; height: 32.2986px; left: 51.2002%; bottom: -10%; opacity: 0.794731; animation-duration: 6.71437s; background: none;">
+        <svg width="32.298648328151636" height="32.298648328151636" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 52.7976px; height: 52.7976px; left: 7.75893%; bottom: -10%; opacity: 0.317502; animation-duration: 6.90525s; background: none;">
+        <svg width="52.79760990083133" height="52.79760990083133" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 47.4407px; height: 47.4407px; left: 1.775%; bottom: -10%; opacity: 0.456218; animation-duration: 8.60228s; background: none;">
+        <svg width="47.440688283905295" height="47.440688283905295" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 36.3384px; height: 36.3384px; left: 0.34653%; bottom: -10%; opacity: 0.457726; animation-duration: 10.0141s; background: none;">
+        <svg width="36.33839283720478" height="36.33839283720478" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 50.8959px; height: 50.8959px; left: 35.1574%; bottom: -10%; opacity: 0.407716; animation-duration: 6.12138s; background: none;">
+        <svg width="50.895921007021215" height="50.895921007021215" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 46.8159px; height: 46.8159px; left: 59.7344%; bottom: -10%; opacity: 0.902487; animation-duration: 5.71558s; background: none;">
+        <svg width="46.81585738684727" height="46.81585738684727" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 35.7438px; height: 35.7438px; left: 29.2495%; bottom: -10%; opacity: 0.830739; animation-duration: 7.89926s; background: none;">
+        <svg width="35.743836939773004" height="35.743836939773004" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 23.2983px; height: 23.2983px; left: 26.5248%; bottom: -10%; opacity: 0.533292; animation-duration: 7.00428s; background: none;">
+        <svg width="23.298323320427563" height="23.298323320427563" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 45.137px; height: 45.137px; left: 58.1141%; bottom: -10%; opacity: 0.779583; animation-duration: 6.34889s; background: none;">
+        <svg width="45.1369699778386" height="45.1369699778386" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 27.9958px; height: 27.9958px; left: 68.1876%; bottom: -10%; opacity: 0.440249; animation-duration: 10.4058s; background: none;">
+        <svg width="27.995843583569886" height="27.995843583569886" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 38.1359px; height: 38.1359px; left: 22.5028%; bottom: -10%; opacity: 0.881964; animation-duration: 10.2517s; background: none;">
+        <svg width="38.135856857611415" height="38.135856857611415" viewBox="0 0 24 24" fill="#7af7e6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 38.959px; height: 38.959px; left: 9.17444%; bottom: -10%; opacity: 0.432984; animation-duration: 8.67287s; background: none;">
+        <svg width="38.95896026311378" height="38.95896026311378" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 51.4417px; height: 51.4417px; left: 25.6606%; bottom: -10%; opacity: 0.931506; animation-duration: 6.36093s; background: none;">
+        <svg width="51.441660529749754" height="51.441660529749754" viewBox="0 0 24 24" fill="#ffb86b" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 39.2631px; height: 39.2631px; left: 49.6408%; bottom: -10%; opacity: 0.613602; animation-duration: 6.80803s; background: none;">
+        <svg width="39.26310793835748" height="39.26310793835748" viewBox="0 0 24 24" fill="#ff7ab6" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 40.158px; height: 40.158px; left: 32.2666%; bottom: -10%; opacity: 0.737843; animation-duration: 5.42441s; background: none;">
+        <svg width="40.1580382816102" height="40.1580382816102" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div><div class="floater" style="width: 41.8484px; height: 41.8484px; left: 70.7633%; bottom: -10%; opacity: 0.859717; animation-duration: 9.90919s; background: none;">
+        <svg width="41.84835041231527" height="41.84835041231527" viewBox="0 0 24 24" fill="#ffd166" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"></path>
+        </svg></div></div>
+      <canvas id="confetti" width="1366" height="641"></canvas>
+
+      <div class="grid">
+        <div class="photo" id="photoBox">
+          
+          <img id="mainPhoto" src="https://i.postimg.cc/Xjf0P13L/foto-namorada.jpg" alt="Nossa foto" onerror="this.style.filter='grayscale(30%)';this.alt='Adicione sua foto: substitua photo.jpg'">
+          <div class="heart">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden=""><path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z" fill="#fff" opacity="0.95"></path></svg>
+            <b>É hoje!</b>
+          </div>
+        </div>
+
+        <div class="content">
+          <h1 class="title" id="title" contenteditable="true">Feliz Aniversário, luah</h1>
+          <div class="subtitle small" contenteditable="true">Hoje é seu dia — e eu te celebro com tudo o que sou.</div>
+
+          <div class="message">
+            <div contenteditable="true" id="messageText">
+              Meu amor,
+              <br><br>
+              Cada dia com você é um presente voce é meu sonho. Hoje eu quero que saiba o quanto você ilumina minha vida seus risos, seu jeito, seu olhar. Obrigado por ser minha parceira, minha amiga e meu abrigo. Que esse ano te traga tudo o que seu coração deseja. mais tarde tem mais em, um beijão<br><br>
+              Com todo meu carinho,
+              <br>
+              <strong>— Juliano seu hacker</strong></div>
+          </div>
+
+          <div class="controls">
+            
+            <button class="btn" id="stopConfetti">Parar confete</button>
+            <a class="btn" id="downloadBtn" href="#" download="homenagem-aniversario.html">Salvar HTML</a>
+          </div>
+
+          <div style="margin-top:12px;font-size:13px;opacity:0.0"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- hidden but present iframe (positioned behind photo) -->
+  
+
+  <script>
+    // --- YouTube hidden player control (autoplay attempted; may be blocked by browser policies) ---
+    
+
+    // floating hearts generator
+    const floaters = document.getElementById('floaters');
+    const colors = ['#ff7ab6','#ffd166','#7af7e6','#ffb86b'];
+    function spawnHeart(){
+      const el = document.createElement('div');
+      el.className='floater';
+      const size = Math.random()*32+22;
+      el.style.width = size+'px';
+      el.style.height = size+'px';
+      el.style.left = (Math.random()*92)+'%';
+      el.style.bottom = '-10%';
+      el.style.opacity = Math.random()*0.7 + 0.3;
+      el.style.animationDuration = (5+Math.random()*6)+'s';
+      el.style.background = 'none';
+      el.innerHTML = `
+        <svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="${colors[Math.floor(Math.random()*colors.length)]}" opacity="0.9">
+          <path d="M12 21s-7.5-4.35-10-7.02C-0.7 9.92 3.33 5 7.5 7.5 9 8.6 10 10.8 12 13c2-2.2 3-4.4 4.5-5.5C20.67 5 24.7 9.92 22 13.98 19.5 17.65 12 21 12 21z"/>
+        </svg>`;
+      floaters.appendChild(el);
+      setTimeout(()=>el.remove(),15000);
+    }
+    setInterval(spawnHeart,400);
+
+    // confetti canvas
+    const canvas = document.getElementById('confetti');
+    const ctx = canvas.getContext('2d');
+    let W, H, confetti = [];
+    function resize(){ W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    window.addEventListener('resize', resize); resize();
+
+    function rand(min,max){ return Math.random()*(max-min)+min }
+    function makeConfetti(){
+      confetti = [];
+      for(let i=0;i<120;i++){
+        confetti.push({x:rand(0,W),y:rand(-H,0),r:rand(6,12),d:rand(1,3),w:rand(6,12),c:colors[Math.floor(Math.random()*colors.length)],rot:rand(0,360),spd:rand(1,3)});
+      }
+    }
+    makeConfetti();
+    let confOn = true;
+    function draw(){
+      ctx.clearRect(0,0,W,H);
+      if(confOn){
+        for(let p of confetti){
+          ctx.save();
+          ctx.translate(p.x,p.y); ctx.rotate(p.rot*Math.PI/180);
+          ctx.fillStyle = p.c; ctx.fillRect(-p.w/2,-p.r/2,p.w,p.r);
+          ctx.restore();
+          p.x += Math.sin(p.d)+p.spd*0.5; p.y += p.spd;
+          p.rot += 2;
+          if(p.y>H+20){ p.y = rand(-100,0); p.x = rand(0,W); }
+        }
+      }
+      requestAnimationFrame(draw);
+    }
+    draw();
+    document.getElementById('stopConfetti').addEventListener('click', ()=>{ confOn = !confOn; document.getElementById('stopConfetti').textContent = confOn ? 'Parar confete' : 'Ligar confete'; });
+
+    // download current HTML (simple snapshot)
+    document.getElementById('downloadBtn').addEventListener('click', (e)=>{
+      e.preventDefault();
+      const blob = new Blob([document.documentElement.outerHTML], {type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href=url; a.download='homenagem-aniversario.html'; a.click(); URL.revokeObjectURL(url);
+    });
+
+    // double click photo to replace via file picker
+    const photo = document.getElementById('mainPhoto');
+    photo.addEventListener('dblclick', ()=>{
+      const inp = document.createElement('input'); inp.type='file'; inp.accept='image/*';
+      inp.onchange = e => {
+        const file = e.target.files[0]; if(!file) return;
+        const url = URL.createObjectURL(file); photo.src = url; photo.alt = file.name;
+      };
+      inp.click();
+    });
+
+  </script>
+
+
+</body></html>
